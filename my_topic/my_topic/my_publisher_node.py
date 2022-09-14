@@ -16,7 +16,7 @@ class MyPublisherNode(Node):
         self.get_logger().info("Publish : " + msg.data)
 
 
-def main():
+def main(args=None):
     rclpy.init(args=args)
     node = MyPublisherNode()
     rclpy.spin(node)
