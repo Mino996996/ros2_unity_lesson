@@ -19,8 +19,8 @@ setup(
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "my_publisher_node = my_topic.my_publisher_node:main",
-            "my_subscriber_node = my_topic.my_subscriber_node:main",
+            "my_publisher_node = my_custom_topic.my_publisher_node:main",
+            "my_subscriber_node = my_custom_topic.my_subscriber_node:main",
         ],
     },
 )
