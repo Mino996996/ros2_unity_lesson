@@ -28,6 +28,8 @@ if(BUILD_TESTING)
 endif()
 
 # IDLの生成(Interface Description Language)
-rosidl_generate_interfaces(${PROJECT_NAME})
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+)
 
 ament_package()
